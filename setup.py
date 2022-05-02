@@ -1,5 +1,9 @@
 import setuptools
 
+requirements = []
+with open("requirements.txt") as f:
+  requirements = f.read().splitlines()
+
 with open("README.md", "r", encoding="utf-8") as f:
     description = f.read()
 
@@ -15,6 +19,7 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": "https://github.com/Leg3ndary/complain/issues",
     },
+    install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

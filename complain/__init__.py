@@ -1,1 +1,1 @@
-from complain import Complain
+from complain import ComplainClient

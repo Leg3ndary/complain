@@ -16,9 +16,10 @@ copies or substantial portions of the Software.
 
 import aiohttp
 
-class Complain:
+
+class AsyncComplain:
     """
-    Base class for all complaints
+    Async class for all complaints
 
     Attributes
     ----------
@@ -34,6 +35,6 @@ class Complain:
         """
         Base options
 
-        
+
         """
         pass

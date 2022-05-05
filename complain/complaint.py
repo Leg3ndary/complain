@@ -22,12 +22,12 @@ class Gender(Enum):
     """
     Genders
     """
+
     male = 0
     female = 1
 
 
-
-class Complain:
+class Complaint:
     """
     Base class for all complaints
 
@@ -36,10 +36,21 @@ class Complain:
     None
     """
 
-    def __init__(self, title: Optional[str], first: str, middle: Optional[str], last: Optional[str], suffix: Optional[str], gender: ) -> None:
+    def __init__(
+        self,
+        title: Optional[str],
+        first: str,
+        middle: Optional[str],
+        last: Optional[str],
+        suffix: Optional[str],
+        gender: Optional[str],
+    ) -> None:
         """
-        Base options
+        Base object for complaints
 
-        
+        Attributes
+        ----------
+        title: Optional[str]
+
         """
         pass

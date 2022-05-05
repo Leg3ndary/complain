@@ -16,10 +16,10 @@ copies or substantial portions of the Software.
 
 import datetime
 import requests
-from complaint import Complain
+from complaint import Complaint
 
 
-class Complain:
+class ComplainClient:
     """
     Base class for requesting complaints
 
@@ -41,19 +41,28 @@ class Complain:
         """
         pass
 
-    def _request(self) -> None:
+    def _request(self, url: str) -> requests.Response:
         """
-        Base request
+        The request function used to request data
+
+        This is not meant to be used by users
+
+        Parameters
+        ----------
+        url: str
+            The url to request
+
+        Returns
+        -------
+        requests.Response
         """
         cookie = {
             "ACLG_agreed": datetime.datetime.strftime("%a, %d %b %Y %H:%M:%S GMT")
         }
-        data = requests.get(
-            url="",
-            cookies=cookie
-        )
+        data = requests.get(url=url, cookies=cookie)
+        return data
 
-    def generate(self) -> Complain:
+    def generate(self) -> Complaint:
         """
         Generate a complaint based on given options
         """

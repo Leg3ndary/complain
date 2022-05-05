@@ -2,7 +2,7 @@ import setuptools
 
 requirements = []
 with open("requirements.txt") as f:
-  requirements = f.read().splitlines()
+    requirements = f.read().splitlines()
 
 with open("README.md", "r", encoding="utf-8") as f:
     description = f.read()

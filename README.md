@@ -1,5 +1,7 @@
 # Complain
 
+**THIS PROJECT IS STILL IN A BETA PHASE.**
+
 Official repository for the complain package.
 
 This project uses [Scott Pakin's automatic complaint-letter generator](https://www.pakin.org/complaint?) and allows you to pull complaints through it.

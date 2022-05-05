@@ -9,7 +9,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setuptools.setup(
     name="complain",
-    version="0.0.1",
+    version="0.0.2",
     author="Leg3ndary",
     author_email="bleg3ndary@gmail.com",
     description="A python wrapper for Scott Pakins complaint generator",

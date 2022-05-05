@@ -15,21 +15,11 @@ copies or substantial portions of the Software.
 """
 
 from typing import Optional
-from enum import Enum
-
-
-class Gender(Enum):
-    """
-    Genders
-    """
-
-    male = 0
-    female = 1
 
 
 class Complaint:
     """
-    Base class for all complaints
+    Base template for all complaints
 
     Attributes
     ----------
